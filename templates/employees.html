@@ -1,5 +1,7 @@
 <div>
-	<input type="text" ng-model="searchText">
+	<input type="text" placeholder="search by name" ng-model="searchText.Name">
+	<input type="text" placeholder="search by city" ng-model="searchText.City">
+	
 	<table border=1>
 		<thead >
 			<tr>
@@ -30,7 +32,7 @@
 			</tr>			
 		</thead>
 		<tbody>
-			<tr ng-repeat="employee in employees">
+			<tr ng-repeat="employee in employees | filter: searchText">
 				<td>{{employee.ID}}</td>
 				<td>{{employee.Name}}</td>
 				<td>{{isNumber(employee.Phone)? employee.Phone: 'NA'}}</td>
