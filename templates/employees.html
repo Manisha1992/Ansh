@@ -1,0 +1,42 @@
+<div>
+	<input type="text" ng-model="searchText">
+	<table border=1>
+		<thead >
+			<tr>
+				<th>
+					ID
+				</th>
+				<th>
+					Name
+				</th>
+				 <th>
+					Phone
+				</th>
+				<th>
+					City
+				</th>
+				<!--
+				
+				<th>
+					Address1
+				</th>
+				<th>
+					Address2
+				</th>
+				<th>
+					Postal
+				</th> -->
+				
+			</tr>			
+		</thead>
+		<tbody>
+			<tr ng-repeat="employee in employees">
+				<td>{{employee.ID}}</td>
+				<td>{{employee.Name}}</td>
+				<td>{{isNumber(employee.Phone)? employee.Phone: 'NA'}}</td>
+				<td>{{employee.City}}</td>
+		
+			</tr>
+		</tbody>
+	</table>
+</div>

@@ -1,0 +1,46 @@
+
+{"data":[
+    {
+    "ID" : 1,
+    "Name" : "Beverage",
+    "City": "Pune",
+    "Phone": 897987654
+    },
+    {
+    "ID" : 2,
+    "Name" : "Condiment",
+    "City": "Pune",
+    "Phone": 897987654
+    },
+    {
+    "ID" : 3,
+    "Name" : "Confection",
+    "City": "Pune",
+    "Phone": 897987654
+    },
+    {
+    "ID" : 4,
+    "Name" : "Beverage",
+    "City": "Pune",
+    "Phone": 897987654
+    },
+    {
+    "ID" : 5,
+    "Name" : "Dairy",
+    "City": "Pune",
+    "Phone": 897987654
+    },
+    {
+    "ID" : 6,
+    "Name" : "Grains",
+    "City": "Pune",
+    "Phone": 897987654
+    },
+    {
+    "ID" : 7,
+    "Name" : "Seafood",
+    "City": "Pune",
+    "Phone": "asd879"
+    }
+
+]}
