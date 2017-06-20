@@ -27,7 +27,7 @@
     {
     "ID" : 5,
     "Name" : "Dairy",
-    "City": "Pune",
+    "City": "Dehli",
     "Phone": 897987654
     },
     {
@@ -39,7 +39,7 @@
     {
     "ID" : 7,
     "Name" : "Seafood",
-    "City": "Pune",
+    "City": "Mumbai",
     "Phone": "asd879"
     }
 

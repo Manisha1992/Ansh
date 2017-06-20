@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	</head>
 	<body ng-app="employeeApp">
 		<ui-view></ui-view>
 		
+
+<!-- Latest compiled JavaScript -->
 		<script src="js/lib/angular.min.js"></script>
 		<script src="js/lib/angular-ui-router.min.js"></script>
 		<script src="route.js"></script>
 		<script src="js/controllers/employeeController.js"></script>
+		<script src="js/controllers/addController.js"></script>
+		<script src="js/controllers/editController.js"></script>
+		<script src="js/services/employeeServices.js"></script>
 	</body>
 </html>

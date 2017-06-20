@@ -2,6 +2,8 @@
 	<input type="text" placeholder="search by name" ng-model="searchText.Name">
 	<input type="text" placeholder="search by city" ng-model="searchText.City">
 	
+	<button ng-click="onAddEmployee()">Add New</button>
+	
 	<table border=1>
 		<thead >
 			<tr>
@@ -17,11 +19,12 @@
 				<th>
 					City
 				</th>
+				<th>
+					Edit
+				</th>
 				<!--
 				
-				<th>
-					Address1
-				</th>
+				
 				<th>
 					Address2
 				</th>
@@ -37,8 +40,17 @@
 				<td>{{employee.Name}}</td>
 				<td>{{isNumber(employee.Phone)? employee.Phone: 'NA'}}</td>
 				<td>{{employee.City}}</td>
-		
+				<td ng-click="onEditEmployee(employee)">Edit</td>
+				
 			</tr>
+			<tr ng-if="(employees |filter:searchText).length == 0" >
+			  <td  colspan="5">No Data found</td>
+			</tr>
+			<p>
 		</tbody>
 	</table>
+	
+	<div>
+		<ui-view></ui-view>
+	</div>
 </div>
